@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: localhost:32000/crashpy:v1
+        image: cluster-cp2-fiap:v1
         ports:
         - containerPort: 80
         command: ["python"]
