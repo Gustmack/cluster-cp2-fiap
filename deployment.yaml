@@ -14,8 +14,10 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: cluster-cp2-fiap:v1
+        image: localhost:5000/cluster-cp2-fiap:v1 
         ports:
         - containerPort: 80
         command: ["python"]
         args: ["./app.py"]
+      imagePullSecrets:  
+      - name: dockerhub-secret  
